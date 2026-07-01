@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -7,7 +8,8 @@ import Education, { Footer } from "./components/EducationFooter";
 
 export default function App() {
   return (
-    <main>
+    <>
+      <Navbar />
       <Hero />
       <About />
       <Skills />
@@ -15,6 +17,6 @@ export default function App() {
       <Experience />
       <Education />
       <Footer />
-    </main>
+    </>
   );
 }
